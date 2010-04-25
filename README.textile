@@ -1,0 +1,5 @@
+h1. Maestro
+
+Interactive piano exercise game written in MacRuby. Requires Mac OS X 10.6 or higher. It assumes you have a midi keyboard hooked up to your computer.
+
+*Still in very early development.*
