@@ -22,7 +22,7 @@ void readProc(const MIDIPacketList *pktlist, void *refCon, void *connRefCon)
 				BOOL	keyDown;
 				int		key;
 				
-				if (packet->data[i] == 144) {
+				if (packet->data[i+2] > 0) {
 					keyDown = YES;
 				} else {
 					keyDown = NO;
