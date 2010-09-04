@@ -5,7 +5,7 @@ class MainView < NSView
     NSColor.whiteColor.set
     NSRectFill(rect)
     if @game
-      draw_title("Play a #{@game.goal}")
+      draw_title("Play #{@game.target_note.sharp_tone}")
     else
       draw_title("Loading...")
     end

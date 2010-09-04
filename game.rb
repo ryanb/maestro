@@ -1,21 +1,17 @@
 class Game
-  attr_reader :goal
+  attr_reader :target_note
 
   def initialize
-    new_goal
+    new_target
   end
 
-  def new_goal
-    @goal = notes[rand(notes.size)]
-  end
-
-  def notes
-    %w[C C# D Eb E F F# G G# A Bb B]
+  def new_target
+    @target_note = Note.random
   end
 
   def key_down(key)
-    if notes[key % 12] == @goal
-      new_goal
+    if @target_note.equal_tone?(key)
+      new_target
     end
   end
 

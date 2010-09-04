@@ -50,6 +50,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		DC3DEDB41232C37000B1A3D0 /* game.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC3DEDB31232C37000B1A3D0 /* game.rb */; };
+		DC3DEDDD1232E63B00B1A3D0 /* note.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC3DEDDC1232E63B00B1A3D0 /* note.rb */; };
 		DC5285C71183C62700A4D471 /* main_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC5285C61183C62700A4D471 /* main_controller.rb */; };
 		DC5285D01183DA7F00A4D471 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5285CF1183DA7F00A4D471 /* CoreMIDI.framework */; };
 		DC5286001183E32100A4D471 /* MIDIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5285D91183DAF600A4D471 /* MIDIUtility.m */; };
@@ -83,6 +84,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Maestro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maestro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3DEDB31232C37000B1A3D0 /* game.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = game.rb; sourceTree = "<group>"; };
+		DC3DEDDC1232E63B00B1A3D0 /* note.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = note.rb; sourceTree = "<group>"; };
 		DC5285C61183C62700A4D471 /* main_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = main_controller.rb; sourceTree = "<group>"; };
 		DC5285CF1183DA7F00A4D471 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		DC5285D81183DAF600A4D471 /* MIDIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIUtility.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				DC5285C61183C62700A4D471 /* main_controller.rb */,
 				DC52869A1183ED3300A4D471 /* main_view.rb */,
 				DC3DEDB31232C37000B1A3D0 /* game.rb */,
+				DC3DEDDC1232E63B00B1A3D0 /* note.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				DC5285C71183C62700A4D471 /* main_controller.rb in Resources */,
 				DC52869B1183ED3300A4D471 /* main_view.rb in Resources */,
 				DC3DEDB41232C37000B1A3D0 /* game.rb in Resources */,
+				DC3DEDDD1232E63B00B1A3D0 /* note.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
