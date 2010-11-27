@@ -55,6 +55,8 @@
 		DC5285D01183DA7F00A4D471 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5285CF1183DA7F00A4D471 /* CoreMIDI.framework */; };
 		DC5286001183E32100A4D471 /* MIDIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5285D91183DAF600A4D471 /* MIDIUtility.m */; };
 		DC52869B1183ED3300A4D471 /* main_view.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC52869A1183ED3300A4D471 /* main_view.rb */; };
+		DC5820E712A18B6100FE9BB4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5820E612A18B6100FE9BB4 /* AudioToolbox.framework */; };
+		DC5820E912A18B6100FE9BB4 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5820E812A18B6100FE9BB4 /* AudioUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +92,8 @@
 		DC5285D81183DAF600A4D471 /* MIDIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIUtility.h; sourceTree = "<group>"; };
 		DC5285D91183DAF600A4D471 /* MIDIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIUtility.m; sourceTree = "<group>"; };
 		DC52869A1183ED3300A4D471 /* main_view.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = main_view.rb; sourceTree = "<group>"; };
+		DC5820E612A18B6100FE9BB4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DC5820E812A18B6100FE9BB4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				DC5285D01183DA7F00A4D471 /* CoreMIDI.framework in Frameworks */,
+				DC5820E712A18B6100FE9BB4 /* AudioToolbox.framework in Frameworks */,
+				DC5820E912A18B6100FE9BB4 /* AudioUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +129,8 @@
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				DC5285CF1183DA7F00A4D471 /* CoreMIDI.framework */,
+				DC5820E612A18B6100FE9BB4 /* AudioToolbox.framework */,
+				DC5820E812A18B6100FE9BB4 /* AudioUnit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
