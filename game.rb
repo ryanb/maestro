@@ -2,11 +2,15 @@ class Game
   attr_reader :target_note
 
   def initialize
+    @notes = []
     new_target
   end
 
   def new_target
-    @target_note = Note.random
+    if @notes.empty?
+      @notes = Chord.new(Note.random, 4, 7).notes
+    end
+    @target_note = @notes.shift
   end
 
   def key_down(key)

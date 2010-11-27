@@ -107,6 +107,7 @@ void createAUGraph(AUGraph *outGraph, AudioUnit *outSynth)
 	MIDIPortRef inPort;
 	MIDIClientRef client;
 	
+	// Set up graph for midi playback
 	createAUGraph(&graph, &synthUnit);
 	AUGraphInitialize(graph);
 	MusicDeviceMIDIEvent(synthUnit, kMidiMessage_ControlChange << 4, kMidiMessage_BankMSBControl, 0, 0/*sample offset*/);

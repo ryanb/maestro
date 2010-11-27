@@ -57,6 +57,7 @@
 		DC52869B1183ED3300A4D471 /* main_view.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC52869A1183ED3300A4D471 /* main_view.rb */; };
 		DC5820E712A18B6100FE9BB4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5820E612A18B6100FE9BB4 /* AudioToolbox.framework */; };
 		DC5820E912A18B6100FE9BB4 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5820E812A18B6100FE9BB4 /* AudioUnit.framework */; };
+		DC58213412A1993000FE9BB4 /* chord.rb in Resources */ = {isa = PBXBuildFile; fileRef = DC58213312A1993000FE9BB4 /* chord.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +95,7 @@
 		DC52869A1183ED3300A4D471 /* main_view.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = main_view.rb; sourceTree = "<group>"; };
 		DC5820E612A18B6100FE9BB4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC5820E812A18B6100FE9BB4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		DC58213312A1993000FE9BB4 /* chord.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = chord.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				DC52869A1183ED3300A4D471 /* main_view.rb */,
 				DC3DEDB31232C37000B1A3D0 /* game.rb */,
 				DC3DEDDC1232E63B00B1A3D0 /* note.rb */,
+				DC58213312A1993000FE9BB4 /* chord.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				DC52869B1183ED3300A4D471 /* main_view.rb in Resources */,
 				DC3DEDB41232C37000B1A3D0 /* game.rb in Resources */,
 				DC3DEDDD1232E63B00B1A3D0 /* note.rb in Resources */,
+				DC58213412A1993000FE9BB4 /* chord.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
