@@ -16,10 +16,16 @@ class MainController < NSWindowController
   def midiKeyDown(notification)
     @game.key_down(notification.object)
     @main_view.setNeedsDisplay(true)
+  rescue Exception => e
+    NSLog([e.message, *e.backtrace].join("\n"))
+    NSRunAlertPanel("Ruby Exception", [e.message, *e.backtrace].join("\n"), "OK", nil, nil);
   end
 
   def midiKeyUp(notification)
     @game.key_up(notification.object)
     @main_view.setNeedsDisplay(true)
+  rescue Exception => e
+    NSLog([e.message, *e.backtrace].join("\n"))
+    NSRunAlertPanel("Ruby Exception", [e.message, *e.backtrace].join("\n"), "OK", nil, nil);
   end
 end

@@ -5,17 +5,19 @@ class MainView < NSView
     NSColor.whiteColor.set
     NSRectFill(rect)
     if @game
-      draw_title("Play #{@game.target_note.sharp_tone}")
+      draw_title("Play #{@game.chord.root_note.sharp_tone} Chord", 20)
+      draw_title(@game.chord.notes.map(&:sharp_tone).join("   "), -5, 16)
+      draw_title(@game.played_notes.map(&:sharp_tone).join("   "), -30, 16)
     else
       draw_title("Loading...")
     end
   end
 
-  def draw_title(title)
-    font = NSFont.fontWithName("Helvetica", size:22.0)
+  def draw_title(title, y_offset = 0, size = 22.0)
+    font = NSFont.fontWithName("Helvetica", size:size)
     string = NSAttributedString.alloc.initWithString(title, attributes:{NSFontAttributeName => font})
     x = bounds.size.width/2 - string.size.width/2
     y = bounds.size.height/2
-    string.drawAtPoint(NSMakePoint(x, y))
+    string.drawAtPoint(NSMakePoint(x, y + y_offset))
   end
 end
