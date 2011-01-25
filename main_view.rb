@@ -5,9 +5,14 @@ class MainView < NSView
     NSColor.whiteColor.set
     NSRectFill(rect)
     if @game
-      draw_title("Play #{@game.chord.root_note.sharp_tone} Chord", 20)
-      draw_title(@game.chord.notes.map(&:sharp_tone).join("   "), -5, 16)
-      draw_title(@game.played_notes.map(&:sharp_tone).join("   "), -30, 16)
+      if @game.done?
+        draw_title("Got #{@game.results.select { |a| a }.size} out of #{@game.results.size} correct", 20)
+        draw_title("Press D to play again", -5, 16)
+      else
+        draw_title("Play #{@game.chord.root_note.sharp_tone} Chord", 20)
+        draw_title(@game.chord.notes.map(&:sharp_tone).join("   "), -5, 16)
+        draw_title(@game.played_notes.map(&:sharp_tone).join("   "), -30, 16)
+      end
     else
       draw_title("Loading...")
     end
